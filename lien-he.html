@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Liên hệ Adam Store - địa chỉ, giờ mở cửa và thông tin cửa hàng thời trang nam tại Thủ Dầu Một.">
+  <title>Liên hệ — Adam Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="wordmark">ADAM <span>STORE</span></div>
+
+      <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="links">
+        <a href="index.html">Trang chủ</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="bo-suu-tap-cuoi.html">Bộ sưu tập cưới</a>
+        <a href="may-do.html">May đo</a>
+        <a href="dong-phuc-doanh-nghiep.html">Đồng phục DN</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lien-he.html" class="active">Liên hệ</a>
+      </nav>
+
+      <a class="nav-cta" href="lien-he.html">Ghé cửa hàng</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">Liên hệ</div>
+        <h1>Ghé thăm cửa hàng</h1>
+        <p>Adam Store hiện chỉ đón khách trực tiếp tại cửa hàng — chưa hỗ trợ đặt hàng online.</p>
+      </div>
+    </section>
+
+    <section class="location section">
+      <div class="wrap">
+        <div class="location-grid">
+          <div class="map-frame">
+            <iframe src="https://maps.google.com/maps?q=105%20Yersin%2C%20Ph%C6%B0%E1%BB%9Dng%20Th%E1%BB%A7%20D%E1%BA%A7u%20M%E1%BB%99t%2C%20TP.HCM&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+          </div>
+
+          <div>
+            <div class="info-row">
+              <div class="k">Địa chỉ</div>
+              <div class="v">Adam Store<br><small>105 Yersin, phường Thủ Dầu Một, Tp. Hồ Chí Minh</small></div>
+            </div>
+            <div class="info-row">
+              <div class="k">Giờ mở cửa</div>
+              <div class="v">08:00 - 22:00<br><small>Tất cả các ngày trong tuần</small></div>
+            </div>
+            <div class="info-row">
+              <div class="k">Hình thức</div>
+              <div class="v">Mua trực tiếp tại cửa hàng<br><small>Thử đồ và tư vấn tại chỗ</small></div>
+            </div>
+            <div class="info-row">
+              <div class="k">Liên hệ</div>
+              <div class="v">0901 234 567<br><small>Zalo / Gọi trực tiếp</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="wrap">
+        <h2>Hẹn gặp bạn tại Adam Store.</h2>
+        <a class="btn-primary" href="san-pham.html">Xem sản phẩm trước khi ghé</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="wordmark">ADAM <span>STORE</span></div>
+          <p>Thời trang nam tại Thủ Dầu Một, Bình Dương — chất liệu bền, form dáng chuẩn, phong cách gọn gàng.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Khám phá</h4>
+          <a href="san-pham.html">Sản phẩm</a>
+          <a href="bo-suu-tap-cuoi.html">Bộ sưu tập cưới</a>
+          <a href="gioi-thieu.html">Giới thiệu</a>
+          <a href="dong-phuc-doanh-nghiep.html">Đồng phục doanh nghiệp</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Cửa hàng</h4>
+          <a href="lien-he.html">Địa chỉ & giờ mở cửa</a>
+          <a href="tel:+84901234567">Gọi: 0901 234 567</a>
+          <a href="https://zalo.me/0901234567" target="_blank" rel="noreferrer">Zalo</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Adam Store, Thủ Dầu Một.</div>
+        <div>Chỉ bán trực tiếp tại cửa hàng — không hỗ trợ đặt hàng online.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.links');
+
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+</body>
+</html>
